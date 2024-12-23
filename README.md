@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/uixcem/NFTCard-Solution)]
-- Live Site URL: [](https://nftcardsolution.netlify.app/)]
+- Solution URL: [Click here](https://github.com/uixcem/NFTCard-Solution)]
+- Live Site URL: [Click here](https://nftcardsolution.netlify.app/)]
 
 ## My Process
 
