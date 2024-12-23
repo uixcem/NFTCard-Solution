@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  padding: 1rem;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+@media (max-width: 375px) {
+  .card {
+    padding: 1.4rem;
+    gap: 1rem;
+  }
+}
+.card__img {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+.card__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/icon-view.svg") no-repeat center;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.card__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 246.5, 0.5);
+  border-radius: 10px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.card__img:hover::after, .card__img:hover::before {
+  opacity: 1;
+}
+.card__img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card h1 {
+  font-size: 2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.card h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+@media (max-width: 375px) {
+  .card h1 {
+    font-size: 1.3rem;
+  }
+}
+.card p {
+  font-size: 1.5rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+@media (max-width: 375px) {
+  .card p {
+    font-size: 1rem;
+  }
+}
+.card__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 1.5rem;
+}
+@media (max-width: 375px) {
+  .card__info {
+    padding-bottom: 1rem;
+  }
+}
+.card__info .value {
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: hsl(178, 100%, 50%);
+}
+@media (max-width: 375px) {
+  .card__info .value {
+    font-size: 1rem;
+  }
+}
+.card__info .value img {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  width: 1rem;
+}
+@media (max-width: 375px) {
+  .card__info .value img {
+    width: 0.6rem;
+  }
+}
+.card__info .timeStamp {
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+}
+@media (max-width: 375px) {
+  .card__info .timeStamp {
+    font-size: 1rem;
+  }
+}
+.card__info .timeStamp img {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  width: 1.3rem;
+}
+@media (max-width: 375px) {
+  .card__info .timeStamp img {
+    width: 1rem;
+  }
+}
+.card__author {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.card__author img {
+  border-radius: 50%;
+  width: 4rem;
+  border: 3px solid #fff;
+}
+@media (max-width: 375px) {
+  .card__author img {
+    width: 2.5rem;
+    border: 2px solid #fff;
+  }
+}
+.card__author p {
+  font-size: 1.5rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+}
+@media (max-width: 375px) {
+  .card__author p {
+    font-size: 1rem;
+  }
+}
+.card__author span {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+.card__author span:hover {
+  color: hsl(178, 100%, 50%);
+}
+@media (max-width: 375px) {
+  .card__author span {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
